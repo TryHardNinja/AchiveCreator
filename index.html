@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Achivment template</title>
+    <link rel="stylesheet" href="https://yastatic.net/bem-components/latest/desktop/bem-components.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body class="page-achieve">
+<form class="create-achieve" method="post" action="#">
+    <h2 class="create-achieve__title">Добавить достижение</h2>
+            <textarea
+                    class="textarea create-achieve__title-add textarea_theme_islands textarea_size_s textarea__control i-bem"
+                    data-bem='{"textarea":{}}' tabindex="1"
+                    placeholder="Название"
+                    required></textarea>
+    <hr class="create-achieve__divider">
+            <textarea
+                    class="textarea create-achieve__desc-add textarea_theme_islands textarea_size_m textarea_width_available textarea__control i-bem"
+                    data-bem='{"textarea":{}}' tabindex="2"
+                    placeholder="Описание"
+                    required></textarea>
+    <hr class="create-achieve__divider">
+         <span class="create-achieve__set-color radio-group radio-group_theme_islands radio-group_size_m radio-group_type_button control-group i-bem" data-bem='{"radio-group":{}}' role="radiogroup">
+    <label class="radio radio_type_button radio_theme_islands radio_size_m i-bem" data-bem='{"radio":{}}'>
+        <button class="button button_togglable_radio button_theme_islands button_size_m button__control i-bem" data-bem='{"button":{}}' role="button" type="button" aria-pressed="false">
+            <span class="button__text">Золото</span>
+        </button>
+        <input class="radio__control" type="radio" autocomplete="off" name="radio-button" value="0" />
+    </label>
+    <label class="radio radio_type_button radio_theme_islands radio_size_m radio_checked i-bem" data-bem='{"radio":{}}'>
+        <button class="button button_togglable_radio button_checked button_theme_islands button_size_m button__control i-bem" data-bem='{"button":{}}' role="button" type="button" aria-pressed="true">
+            <span class="button__text">Серебро</span>
+        </button>
+        <input class="radio__control" type="radio" autocomplete="off" name="radio-button" value="1" checked="checked" />
+    </label>
+    <label class="radio radio_type_button radio_theme_islands radio_size_m i-bem" data-bem='{"radio":{}}'>
+        <button class="button button_togglable_radio button_theme_islands button_size_m button__control i-bem" data-bem='{"button":{}}' role="button" type="button" aria-pressed="false">
+            <span class="button__text">Медь</span>
+        </button>
+        <input class="radio__control" type="radio" autocomplete="off" name="radio-button" value="2" />
+    </label>
+</span>
+    <hr class="create-achieve__divider">
+         <span class="attach attach_theme_islands attach_size_m i-bem" data-bem='{"attach":{}}'>
+    <span class="button button_size_m button_theme_islands button__control i-bem" data-bem='{"button":{}}'
+          role="button">
+        <input class="attach__control " type="file" id="create-achieve__img-add"/>
+        <span class="button__text">Выберите изображение</span>
+    </span>
+    <span class="attach__no-file">Изображение не выбрано</span>
+</span>
+    <hr class="create-achieve__divider">
+    <button class="button  create-achieve__add-achieve button_theme_islands button_size_m button_type_submit button__control i-bem"
+            data-bem='{"button":{}}' role="button" type="submit"
+            name="addAchieve" value="Add">
+        <span class="button__text">Добавить ачивку</span>
+    </button>
+</form>
+<div class=achievements>
+    <h1 class="achievements__title">Список достижений</h1><br>
+    <div class="achievements__list">
+        <div class="achieve achieve_tmpl" title="">
+            <div class="achieve__badge achieve__badge_color" style="">
+                <div class="achieve__number">:index</div>
+                <div class="achieve__number-place">
+                </div>
+            </div>
+            <div class="achieve__title">
+                <strong>:title</strong>
+                <div class="achieve__description">:description</div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+<!-- script -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+<script type="text/javascript" src="https://yastatic.net/bem-components/latest/desktop/bem-components.js+bemhtml.js"></script>
+<script type="text/javascript" src="assets/js/achieve.js" charset="utf-8"></script>
+</body>
+</html>

@@ -1,0 +1,121 @@
+.page-achieve {
+    font: .8em Arial,Helvetica,sans-serif;
+}
+.achievements__list {
+    width: 90%;
+    margin: 0 auto;
+    border: 1px solid RGB(229, 229, 229);
+    min-height: 100px;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-justify-content: flex-start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    -webkit-align-content: flex-start;
+    -ms-flex-line-pack: start;
+    align-content: flex-start;
+    -webkit-align-items: flex-start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+}
+.achievements__title {
+    font: 22px/24px Arial,Helvetica,sans-serif;
+    padding: 15px 0;
+    border-bottom: 1px solid #e5e5e5;
+    padding-left: 5%;
+}
+.achieve {
+    margin: 20px;
+}
+
+.achieve__badge {
+    position: relative;
+    border: 3px solid;
+    border-radius: 50%;
+    width: 100px;
+    background: whitesmoke no-repeat center;
+    background-size: cover;
+    height: 100px;
+
+}
+
+.achieve__badge_color-copper {
+    background-color: #B87333;
+    color: #B87333;
+}
+.achieve__badge_color-silver {
+    background-color: silver;
+    color: silver;
+}
+.achieve__badge_color-gold {
+    background-color: gold;
+    color: gold;
+}
+
+.achieve__number-place {
+    position: absolute;
+    border: 3px solid;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    left: 70px;
+    top: 45px;
+    z-index: -10;
+}
+.achieve__number {
+    text-align: center;
+    display: table-cell;
+    vertical-align: middle;
+    position: relative;
+    font-size: 25px;
+    left: 73px;
+    top: 48px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: whitesmoke;
+}
+.achieve__title {
+    display: none;
+}
+.achieve__description {
+    display: none;
+}
+.achieve_tmpl {
+    display: none;
+}
+
+.create-achieve {
+    border: 2px solid #fc0;
+    padding: 5px;
+    min-width: 400px;
+    max-width: 600px;
+    width: 40%;
+    margin: 0 auto;
+}
+.create-achieve__title {
+    text-align: center;
+    margin: 10px 0px;
+    padding-bottom: 10px;
+    border-bottom: 1px dotted gainsboro;
+
+}
+.create-achieve__set-color {
+    font-size: 0px;
+}
+.create-achieve__divider {
+    margin: 5px 0px;
+    border: 0px;
+    height: 0px;
+}
+
+
+
+
